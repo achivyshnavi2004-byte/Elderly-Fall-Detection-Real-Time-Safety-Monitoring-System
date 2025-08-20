@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elderly Fall Detection</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Elderly Fall Detection – Real-Time</h1>
+        <p>Webcam feed with YOLOv8 fall detection:</p>
+        <div class="video-frame">
+            <img src="{{ url_for('video_feed') }}">
+        </div>
+    </div>
+</body>
+</html>
